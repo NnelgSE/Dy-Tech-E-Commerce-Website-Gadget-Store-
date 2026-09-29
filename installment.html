@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installment and Payment Plan | Dy-Tech Store</title>
+    <link rel="stylesheet" href="assets/installment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="payment-calculator">
+      <div class="back-button">
+        <!-- Product Page Button -->
+        <a href="index.html" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Home Page</span>
+        </a>
+        <!--- Home Page Button-->
+        <a href="product.html" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Product </span>
+        </a>
+      </div>
+
+      <!---- Header ------>
+      <div class="calculator-header">
+        <div class="calculator-badge">
+          <span>PAYMENT CALCULATOR</span>
+          <h2>Calculate Your <strong>Installment</strong></h2>
+          <p>Choose your payment frequency and see your estimated payment.</p>
+        </div>
+      </div>
+
+      <!-- Monthly / Yearly -->
+      <div class="calculator-tabs">
+        <button class="Btn-active">Monthly</button>
+        <button class="Btn">Yearly</button>
+      </div>
+
+      <!-- ONE GROUP / CONTAINER -->
+      <div class="calculator-box">
+        <!-- LEFT COLUMN -->
+        <div class="calculator-inputs">
+          <h3>Payment Details</h3>
+
+          <!-- Product Price -->
+          <div class="form-group">
+            <label>Product Price</label>
+
+            <div class="input-wrapper">
+              <span>₱</span>
+              <input type="number" value="25000" />
+            </div>
+          </div>
+
+          <!-- Down Payment -->
+          <div class="form-group">
+            <label>Down Payment</label>
+
+            <div class="input-wrapper">
+              <span>₱</span>
+              <input type="number" value="5000" />
+            </div>
+          </div>
+
+          <!-- Payment Period -->
+          <div class="form-group">
+            <label>Payment Period</label>
+
+            <select>
+              <option>3 Months</option>
+              <option selected>6 Months</option>
+              <option>12 Months</option>
+            </select>
+          </div>
+
+          <!-- Interest -->
+          <div class="form-group">
+            <label>Interest Rate</label>
+
+            <div class="input-wrapper">
+              <input type="number" value="5" />
+              <span>%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VERTICAL DIVIDER -->
+        <div class="calculator-divider"></div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="calculator-result">
+          <span class="result-label"> PAYMENT SUMMARY </span>
+
+          <h3>Your Monthly Payment</h3>
+
+          <div class="payment-details">
+            <div class="detail-row">
+              <span>Product Price</span>
+              <strong>₱25,000</strong>
+            </div>
+
+            <div class="detail-row">
+              <span>Down Payment</span>
+              <strong>₱5,000</strong>
+            </div>
+
+            <div class="detail-row">
+              <span>Amount Financed</span>
+              <strong>₱20,000</strong>
+            </div>
+
+            <div class="detail-row">
+              <span>Interest</span>
+              <strong>₱1,000</strong>
+            </div>
+          </div>
+
+          <div class="result-divider"></div>
+
+          <div class="total-row">
+            <span>Total Payment</span>
+            <strong>₱21,000</strong>
+          </div>
+
+          <!-- MAIN PAYMENT -->
+          <div class="main-payment">
+            <span>ESTIMATED MONTHLY PAYMENT</span>
+
+            <strong>₱3,500</strong>
+
+            <small>6 payments</small>
+          </div>
+
+          <button class="calculator-button">
+            Continue to Checkout
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script/installment.js"></script>
+  </body>
+</html>
